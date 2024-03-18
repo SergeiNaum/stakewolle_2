@@ -4,3 +4,6 @@ start:
 install:
 	poetry install
 
+docker_run:
+	docker run --rm --name main_app sergeynaum/stakewolle2
+
