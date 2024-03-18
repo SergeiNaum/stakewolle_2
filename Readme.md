@@ -1,5 +1,4 @@
-[![Lint Code](https://github.com/SergeiNaum/Stakewolle/actions/workflows/linter_check.yml/badge.svg)](https://github.com/SergeiNaum/Stakewolle/actions/workflows/linter_check.yml)
-# Test task № 2 for the company Stakewolle
+[![Lint Code](https://github.com/SergeiNaum/stakewolle_2/actions/workflows/linter_check.yml/badge.svg)](https://github.com/SergeiNaum/stakewolle_2/actions/workflows/linter_check.yml)# Test task № 2 for the company Stakewolle
 # For an exchange, get all trading pairs, their latest prices and trading volume for 24 hours
 
 ## Quick start
