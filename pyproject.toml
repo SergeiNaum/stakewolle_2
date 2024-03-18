@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "stakewolle2"
+version = "0.1.0"
+description = "Task_2 for stakewolle company"
+authors = ["SergeiNaum <sergei.naumencko@yandex.ru>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiohttp = "^3.9.3"
+flake8 = "^7.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
