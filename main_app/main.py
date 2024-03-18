@@ -93,11 +93,11 @@ class MyExchange(BaseExchange):
     """
 
     def __init__(self):
-        self.id = 'binance'
-        self.base_url = 'https://api.coingecko.com/'
-        self.markets = {}  # not really needed, just a stub
-        self.postfix = '/api/v3/exchanges/binance/tickers'
-        self.params = '?vs_currency=usd&include_24hr_vol=true'
+        self.id: str = 'binance'
+        self.base_url: str = 'https://api.coingecko.com/'
+        self.markets: dict = {}  # not really needed, just a stub
+        self.postfix: str = '/api/v3/exchanges/binance/tickers'
+        self.params: str = '?vs_currency=usd&include_24hr_vol=true'
 
     def _convert_symbol_to_ccxt(self, symbols: str) -> Symbol:
         if isinstance(symbols, str):
@@ -133,9 +133,9 @@ class biconomy(BaseExchange):
     """
 
     def __init__(self):
-        self.id = 'biconomy'
-        self.base_url = "https://www.biconomy.com/"
-        self.markets = {}  # not really needed, just a stub
+        self.id: str = 'biconomy'
+        self.base_url: str = "https://www.biconomy.com/"
+        self.markets: dict = {}  # not really needed, just a stub
 
     async def fetch_tickers(self) -> dict[str, TickerInfo]:
         data = await self.fetch_data(self.base_url + 'api/v1/tickers')
@@ -166,9 +166,9 @@ class toobit(BaseExchange):
     """
 
     def __init__(self):
-        self.id = 'toobit'
-        self.base_url = "https://api.toobit.com/"
-        self.markets = {}
+        self.id: str = 'toobit'
+        self.base_url: str = "https://api.toobit.com/"
+        self.markets: dict = {}
 
     async def fetch_tickers(self) -> dict[Symbol, TickerInfo]:
         if not self.markets:
