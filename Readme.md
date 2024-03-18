@@ -17,7 +17,7 @@ mkdir app && cd app
 ##### clonne project from repo
 
 ```
-git clone https://github.com/SergeiNaum/Stakewolle.git
+git clone https://github.com/SergeiNaum/stakewolle_2.git
 ```
 ---
 
